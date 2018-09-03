@@ -1,2 +1,2 @@
 build:
-	g++ -Wall main.cpp -lsfml-graphics -lsfml-window -lsfml-system -o SFMLFlappyBird
+	g++ -Wall src/main.cpp src/Bird.cpp -lsfml-graphics -lsfml-window -lsfml-system -o SFMLFlappyBird
