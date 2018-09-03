@@ -3,6 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
+// Utils.cpp consists of a bunch of useful functions for making gamedev faster. 
+
 float[] lerp(float x1, float x2, float y1, float y2, int points);
 float getTopleft(sf::RectangleShape rect);
 float getTopRight(sf::RectangleShape rect);

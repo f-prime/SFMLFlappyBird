@@ -76,15 +76,11 @@ bool Bird::collide(sf::RectangleShape& object) {
     return false;
 }
 
-void move_flap(sf::RectangleShape& bird) {
-    bird.move(sf::Vector2f(0, -10));
-}
-
 void Bird::update() {
     if(this->flapping <= 0) {
         this->gravity();
     } else {
-        move_flap(this->bird);
+        bird.move(sf::Vector2f(0, -10));
         this->flapping--;        
     }
     this->animate();
